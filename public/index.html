@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Chat App</title>
+</head>
+
+<body>
+    <div id="mario-chat">
+        <h2>Mario Chat <small id="feedback"></small></h2>
+        <div id="chat-window">
+            <div id="output">
+                <div class="usermsg left">
+                    <p><strong>Bob: </strong><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem magnam
+                        provident eligendi blanditiis corrupti inventore
+                        in dolorum illum at pariatur dolore possimus beatae laudantium, dolores cumque unde dolor
+                        expedita soluta.</p>
+                </div>
+
+                <p class="center">Akash Joined The Chat</p>
+
+                <div class="usermsg right">
+                    <p><strong>Alice: </strong><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+                        magnam provident eligendi blanditiis corrupti inventore
+                        in dolorum illum at pariatur dolore possimus beatae laudantium, dolores cumque unde dolor
+                        expedita soluta.</p>
+                </div>
+            </div>
+
+        </div>
+        <!-- <input id="handle" type="text" placeholder="Handle" /> -->
+        <input id="message" type="text" placeholder="Message" />
+        <button id="send">Send</button>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.1/socket.io.js"
+    integrity="sha512-AcZyhRP/tbAEsXCCGlziPun5iFvcSUpEz2jKkx0blkYKbxU81F+iq8FURwPn1sYFeksJ+sDDrI5XujsqSobWdQ=="
+    crossorigin="anonymous"></script>
+<script src="/chat.js"></script>
+
+</html>
